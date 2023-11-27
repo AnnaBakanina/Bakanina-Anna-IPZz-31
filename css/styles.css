@@ -31,6 +31,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
+    line-height: 117.385%;
 }
 
 .web {
@@ -44,6 +45,7 @@ body {
 .link {
     font-size: 14px;
     font-weight: 500;
+    line-height: 117.214%;
     color: var(--text-color);
 }
 
@@ -51,7 +53,8 @@ body {
     color: var(--company-color);
 }
 
-.header-navigation {
+.header-navigation,
+.header-contacts {
     list-style: none;
 }
 
@@ -62,13 +65,13 @@ body {
 /* Footer styles */
 
 .footer {
-    width: 1600px;
-    height: 251px;
-    top: 2094px;
     background-color: var(--background-color);
 }
 
 .footer-address {
+    line-height: 114.286%;
+    letter-spacing: 0.03em;
+    text-align: left;
     color: var(--white);
 }
 
@@ -92,6 +95,7 @@ body {
 .overview-title {
     font-weight: 900;
     font-size: 44px;
+    line-height: 136.364%;
     text-align: center;
     color: var(--white);
 }
@@ -105,6 +109,7 @@ body {
     top: 430px;
     left: 700px;
     border-radius: 4px;
+    line-height: 187.5%;
     background-color: var(--company-color);
     color: var(--white);
     cursor: pointer;
@@ -123,10 +128,14 @@ body {
     left: 215px;
 }
 
+.services-list {
+    list-style: none;
+}
+
 .services-card-title {
     font-size: 14px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 117.214%;
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--text-titles-color);
@@ -134,7 +143,7 @@ body {
 
 .services-card-description {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171.429%;
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--text-color);
@@ -147,10 +156,14 @@ body {
     left: 215px;
 }
 
+.works-list {
+    list-style: none;
+}
+
 .works-title {
     font-size: 36px;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 117.194%;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -168,11 +181,19 @@ body {
     background-color: var(--background-color_light);
 }
 
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 117.194%;
+    text-align: center;
+}
+
 .team-list {
     width: 1170px;
     height: 368px;
     top: 1632px;
     left: 215px;
+    list-style: none;
 }
 
 .team-card {
@@ -185,7 +206,7 @@ body {
 .team-card-name {
     font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 118.75%;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--text-titles-color);
@@ -193,7 +214,7 @@ body {
 
 .team-card-role {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 118.75%;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--text-color);
@@ -212,6 +233,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
+    line-height: 162.5%;
     text-align: center;
     cursor: pointer;
 }
@@ -230,9 +252,14 @@ body {
     border-color: var(--border-color);
 }
 
+.portfolio-list {
+    list-style: none;
+}
+
 .portfolio-card-project-title {
     font-size: 18px;
     font-weight: 700;
+    line-height: 200%;
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--text-titles-color);
@@ -240,5 +267,6 @@ body {
 
 .portfolio-card-project-type {
     font-size: 16px;
+    line-height: 187.5%;
     color: var(--text-color);
 }
