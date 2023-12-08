@@ -18,18 +18,35 @@ body {
     background-color: var(--white);
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Header styles */
 
 .header {
     color: var(--white);
     border: 1px;
+    height: 80px;
 }
 
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 117.385%;
+    line-height: 117.38%;
+    text-decoration: none;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
 }
 
 .web {
@@ -43,33 +60,50 @@ body {
 .link {
     font-size: 14px;
     font-weight: 500;
-    line-height: 117.214%;
+    line-height: 117.21%;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 .link:hover {
     color: var(--company-color);
 }
 
+.header-container,
 .header-navigation,
 .header-contacts {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .navigation-link {
     color: var(--black);
+    padding: 32px 0;
+    
 }
 
 /* Footer styles */
 
 .footer {
     background-color: var(--background-color);
+    height: 251px;
+}
+
+.footer-logo {
+    padding-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-address {
-    line-height: 114.286%;
+    line-height: 114.29%;
     letter-spacing: 0.03em;
-    text-align: left;
+    
     color: var(--white);
 }
 
@@ -79,12 +113,16 @@ body {
 
 .contact-info-list {
     list-style: none;
+
 }
 
 /* Company page styles */
 
 .overview {
     background-color: var(--background-color);
+    padding-bottom: 280px;
+    padding-top: 200px;
+    text-align: center;
 }
 
 .overview-title {
@@ -93,13 +131,20 @@ body {
     line-height: 136.364%;
     text-align: center;
     color: var(--white);
+    text-transform: uppercase;
 }
 
 .overview-button {
+    height: 50px;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     font-weight: 700;
     font-size: 16px;
     text-align: center;
     border-radius: 4px;
+    border: none;
     line-height: 187.5%;
     background-color: var(--company-color);
     color: var(--white);
@@ -115,6 +160,9 @@ body {
 
 .services-list {
     list-style: none;
+    display: flex;
+    padding-top: 94px;
+    gap: 30px;
 }
 
 .services-card-title {
@@ -136,6 +184,9 @@ body {
 
 .works-list {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .works-title {
@@ -157,8 +208,18 @@ body {
     text-align: center;
 }
 
+.team-card {
+    background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
 .team-list {
     list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 .team-card-name {
@@ -180,8 +241,17 @@ body {
 
 /* Portfolio page styles */
 
+.filters-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .filters-button {
     border-radius: 4px;
+    border: none;
     background-color: var(--background-color_light);
     color: var(--text-titles-color);
     font-size: 16px;
@@ -198,12 +268,16 @@ body {
 }
 
 .portfolio-card {
-    border: 1px;
+    border: 1px solid;
     border-color: var(--border-color);
+    width: calc((100% - 60px) / 3);
 }
 
 .portfolio-list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .portfolio-card-project-title {
@@ -213,10 +287,12 @@ body {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--text-titles-color);
+    padding-left: 24px;
 }
 
 .portfolio-card-project-type {
     font-size: 16px;
     line-height: 187.5%;
     color: var(--text-color);
+    padding-left: 24px;
 }
