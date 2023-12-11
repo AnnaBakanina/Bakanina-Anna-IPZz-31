@@ -1,0 +1,230 @@
+:root {
+    --company-color: #2196F3;
+    --black: #000000;
+    --white: #FFFFFF;
+    --background-color: #2F303A;
+    --background-color_light: #F5F4FA;
+    --text-color: #757575;
+    --text-titles-color: #212121;
+    --border-color: #EEEEEE;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--white);
+}
+
+/* Header styles */
+
+.header {
+    color: var(--white);
+    border: 1px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 117.385%;
+    text-decoration: none;
+}
+
+.web {
+    color: var(--company-color);
+}
+
+.studio {
+    color: var(--black);
+}
+
+.link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 117.214%;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--company-color);
+}
+
+.header-navigation,
+.header-contacts {
+    list-style: none;
+}
+
+.navigation-link {
+    color: var(--black);
+}
+
+/* Footer styles */
+
+.footer {
+    background-color: var(--background-color);
+}
+
+.footer-address {
+    line-height: 114.286%;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--white);
+}
+
+.studio-footer {
+    color: var(--white);
+}
+
+.contact-info-list {
+    list-style: none;
+}
+
+/* Company page styles */
+
+.overview {
+    background-color: var(--background-color);
+}
+
+.overview-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136.364%;
+    text-align: center;
+    color: var(--white);
+}
+
+.overview-button {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    line-height: 187.5%;
+    background-color: var(--company-color);
+    color: var(--white);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.overview-button:hover {
+    width: 216px;
+    left: 692px;
+    transition: 0.5s;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-card-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 117.214%;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--text-titles-color);
+}
+
+.services-card-description {
+    font-size: 14px;
+    line-height: 171.429%;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.works-list {
+    list-style: none;
+}
+
+.works-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 117.194%;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.team {
+    background-color: var(--background-color_light);
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 117.194%;
+    text-align: center;
+}
+
+.team-list {
+    list-style: none;
+}
+
+.team-card-name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 118.75%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--text-titles-color);
+}
+
+.team-card-role {
+    font-size: 16px;
+    line-height: 118.75%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Portfolio page styles */
+
+.filters-list {
+    list-style: none;
+}
+
+.filters-button {
+    border-radius: 4px;
+    border: none;
+    background-color: var(--background-color_light);
+    color: var(--text-titles-color);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 162.5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.filters-button:hover {
+    color: var(--white);
+    background-color: var(--company-color);
+}
+
+.portfolio-card {
+    border: 1px;
+    border-color: var(--border-color);
+}
+
+.portfolio-list {
+    list-style: none;
+}
+
+.portfolio-card-project-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 200%;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: var(--text-titles-color);
+}
+
+.portfolio-card-project-type {
+    font-size: 16px;
+    line-height: 187.5%;
+    color: var(--text-color);
+}
