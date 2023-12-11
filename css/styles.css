@@ -18,6 +18,22 @@ body {
     background-color: var(--white);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -247,6 +263,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
+    padding: 0 0 50px;
 }
 
 .filters-button {
@@ -277,7 +294,7 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .portfolio-card-project-title {
@@ -287,12 +304,11 @@ body {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--text-titles-color);
-    padding-left: 24px;
+    
 }
 
 .portfolio-card-project-type {
     font-size: 16px;
     line-height: 187.5%;
     color: var(--text-color);
-    padding-left: 24px;
 }
