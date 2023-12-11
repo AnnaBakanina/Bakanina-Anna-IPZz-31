@@ -30,6 +30,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 117.385%;
+    text-decoration: none;
 }
 
 .web {
@@ -45,6 +46,7 @@ body {
     font-weight: 500;
     line-height: 117.214%;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 .link:hover {
@@ -100,6 +102,7 @@ body {
     font-size: 16px;
     text-align: center;
     border-radius: 4px;
+    border: none;
     line-height: 187.5%;
     background-color: var(--company-color);
     color: var(--white);
@@ -180,8 +183,13 @@ body {
 
 /* Portfolio page styles */
 
+.filters-list {
+    list-style: none;
+}
+
 .filters-button {
     border-radius: 4px;
+    border: none;
     background-color: var(--background-color_light);
     color: var(--text-titles-color);
     font-size: 16px;
