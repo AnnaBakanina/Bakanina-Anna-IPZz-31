@@ -34,6 +34,12 @@ img {
     height: auto;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -49,7 +55,7 @@ img {
 
 .header {
     color: var(--white);
-    border: 1px;
+    border-bottom: 1px solid #ECECEC;
     height: 80px;
 }
 
@@ -79,6 +85,7 @@ img {
     line-height: 117.21%;
     color: var(--text-color);
     text-decoration: none;
+    font-style: normal;
 }
 
 .link:hover {
@@ -88,7 +95,6 @@ img {
 .header-container,
 .header-navigation,
 .header-contacts {
-    list-style: none;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -108,7 +114,7 @@ img {
 }
 
 .footer-logo {
-    padding-top: 60px;
+    margin-top: 60px;
 }
 
 .footer-container {
@@ -128,8 +134,9 @@ img {
 }
 
 .contact-info-list {
-    list-style: none;
-
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 /* Company page styles */
@@ -175,7 +182,6 @@ img {
 }
 
 .services-list {
-    list-style: none;
     display: flex;
     padding-top: 94px;
     gap: 30px;
@@ -233,7 +239,6 @@ img {
 }
 
 .team-list {
-    list-style: none;
     display: flex;
     gap: 30px;
 }
@@ -258,25 +263,27 @@ img {
 /* Portfolio page styles */
 
 .filters-list {
-    list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 0 0 50px;
+    margin-bottom: 50px;
 }
 
 .filters-button {
     border-radius: 4px;
     border: none;
-    background-color: var(--background-color_light);
+    background: var(--background-color_light);
     color: var(--text-titles-color);
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.48px;
     line-height: 162.5%;
     text-align: center;
     cursor: pointer;
+
+    padding: 6px 22px 6px 22px;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
 
 .filters-button:hover {
@@ -285,16 +292,21 @@ img {
 }
 
 .portfolio-card {
-    border: 1px solid;
-    border-color: var(--border-color);
+    background-color: var(--white);
+    border: 1px solid #eeeeee;
+    border-radius: 0px 0px 4px 4px;
     width: calc((100% - 60px) / 3);
 }
 
 .portfolio-list {
-    list-style: none;
+    padding-inline-start: -40px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.portfolio-card-description {
+    margin: 20px 24px;
 }
 
 .portfolio-card-project-title {
